@@ -45,6 +45,29 @@ class ShoppingViewController: UIViewController {
         ref.removeAllObservers()
     }
     
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let item = shopListItems[indexPath.row]
+            item.ref?.removeValue()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let cell = tableView.cellForRow(at: indexPath) else { return }
+        let item = shopListItems[indexPath.row]
+        let isCompleted = !item.completed
+        toggleCompletion(cell, isCompleted: isCompleted)
+        item.ref?.updateChildValues(["completed" : isCompleted])
+    }
+    
+    private func toggleCompletion(_ cell: UITableViewCell, isCompleted: Bool) {
+        cell.accessoryType = isCompleted ? .checkmark : .none
+    }
+    
     @IBAction func addTapped(_ sender: UIBarButtonItem) {
         let alertController = UIAlertController(title: "Новая покупка", message: "Добавить новую покупку", preferredStyle: .alert)
         alertController.addTextField()
@@ -84,6 +107,7 @@ extension ShoppingViewController: UITableViewDataSource, UITableViewDelegate {
         cell.backgroundColor = .clear
         cell.textLabel?.textColor = .white
         cell.textLabel?.text = shopListItems[indexPath.row].title
+        toggleCompletion(cell, isCompleted: shopListItems[indexPath.row].completed)
         
         return cell
     }
