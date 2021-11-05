@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		87EEB24D2734DE1A00F13BC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EEB24C2734DE1A00F13BC3 /* AppDelegate.swift */; };
 		87EEB24F2734DE1A00F13BC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EEB24E2734DE1A00F13BC3 /* SceneDelegate.swift */; };
-		87EEB2512734DE1A00F13BC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EEB2502734DE1A00F13BC3 /* ViewController.swift */; };
+		87EEB2512734DE1A00F13BC3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EEB2502734DE1A00F13BC3 /* LoginViewController.swift */; };
 		87EEB2542734DE1A00F13BC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87EEB2522734DE1A00F13BC3 /* Main.storyboard */; };
 		87EEB2562734DE1B00F13BC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87EEB2552734DE1B00F13BC3 /* Assets.xcassets */; };
 		87EEB2592734DE1B00F13BC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87EEB2572734DE1B00F13BC3 /* LaunchScreen.storyboard */; };
+		87EEB2612734E3EA00F13BC3 /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EEB2602734E3EA00F13BC3 /* ShoppingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		87EEB2492734DE1A00F13BC3 /* Shopping List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shopping List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87EEB24C2734DE1A00F13BC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87EEB24E2734DE1A00F13BC3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		87EEB2502734DE1A00F13BC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		87EEB2502734DE1A00F13BC3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		87EEB2532734DE1A00F13BC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87EEB2552734DE1B00F13BC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87EEB2582734DE1B00F13BC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87EEB25A2734DE1B00F13BC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87EEB2602734E3EA00F13BC3 /* ShoppingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,32 @@
 		87EEB24B2734DE1A00F13BC3 /* Shopping List */ = {
 			isa = PBXGroup;
 			children = (
+				87EEB2642734E47300F13BC3 /* Controllers */,
+				87EEB2632734E43500F13BC3 /* Supporting files */,
+			);
+			path = "Shopping List";
+			sourceTree = "<group>";
+		};
+		87EEB2632734E43500F13BC3 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
 				87EEB24C2734DE1A00F13BC3 /* AppDelegate.swift */,
 				87EEB24E2734DE1A00F13BC3 /* SceneDelegate.swift */,
-				87EEB2502734DE1A00F13BC3 /* ViewController.swift */,
 				87EEB2522734DE1A00F13BC3 /* Main.storyboard */,
 				87EEB2552734DE1B00F13BC3 /* Assets.xcassets */,
 				87EEB2572734DE1B00F13BC3 /* LaunchScreen.storyboard */,
 				87EEB25A2734DE1B00F13BC3 /* Info.plist */,
 			);
-			path = "Shopping List";
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		87EEB2642734E47300F13BC3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				87EEB2502734DE1A00F13BC3 /* LoginViewController.swift */,
+				87EEB2602734E3EA00F13BC3 /* ShoppingViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +157,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87EEB2512734DE1A00F13BC3 /* ViewController.swift in Sources */,
+				87EEB2512734DE1A00F13BC3 /* LoginViewController.swift in Sources */,
 				87EEB24D2734DE1A00F13BC3 /* AppDelegate.swift in Sources */,
+				87EEB2612734E3EA00F13BC3 /* ShoppingViewController.swift in Sources */,
 				87EEB24F2734DE1A00F13BC3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +311,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PV83Q4CKGN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Shopping List/Info.plist";
+				INFOPLIST_FILE = "Shopping List/Supporting files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -320,7 +340,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PV83Q4CKGN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Shopping List/Info.plist";
+				INFOPLIST_FILE = "Shopping List/Supporting files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

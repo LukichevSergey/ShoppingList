@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,17 +17,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shopping List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zw-j2-wCc">
-                                <rect key="frame" x="93" y="84" width="228" height="48"/>
+                                <rect key="frame" x="93" y="424" width="228" height="48"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.73725490196078436" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="5zw-j2-wCc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="6E3-Oo-MYJ"/>
-                            <constraint firstItem="5zw-j2-wCc" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="hmS-o7-NTY"/>
+                            <constraint firstItem="5zw-j2-wCc" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="IOs-qs-OaJ"/>
+                            <constraint firstItem="5zw-j2-wCc" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="brj-RD-OCW"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -37,9 +36,4 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>
