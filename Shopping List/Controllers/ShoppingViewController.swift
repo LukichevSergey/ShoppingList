@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class ShoppingViewController: UIViewController {
     
@@ -20,6 +22,17 @@ class ShoppingViewController: UIViewController {
     
     @IBAction func addTapped(_ sender: UIBarButtonItem) {
     }
+    
+    @IBAction func signOutTapped(_ sender: UIBarButtonItem) {
+        do {
+            try Auth.auth().signOut()
+        } catch {
+            print(error.localizedDescription)
+        }
+        //Закрытие экрана
+        dismiss(animated: true, completion: nil)
+    }
+    
     
 }
 

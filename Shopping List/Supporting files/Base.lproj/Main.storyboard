@@ -47,7 +47,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DIL-d8-kgz">
                                                 <rect key="frame" x="0.0" y="63" width="331" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" textContentType="password"/>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -66,7 +66,6 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jzV-fQ-ZmQ"/>
-                                                    <segue destination="PMS-Dc-ZDe" kind="show" identifier="shoppingSegue" id="iDR-f0-ujl"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yrf-DJ-F5X">
@@ -100,6 +99,7 @@
                         <outlet property="emailTextField" destination="IJZ-rd-4iT" id="k8S-IY-ojS"/>
                         <outlet property="passwordTextField" destination="DIL-d8-kgz" id="Vew-Il-tE7"/>
                         <outlet property="warningLabel" destination="U1D-Z5-T0a" id="o6l-Yj-5Fh"/>
+                        <segue destination="PMS-Dc-ZDe" kind="show" identifier="shopListSegue" id="l5P-nV-EwR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -145,6 +145,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Shopping List" id="1V3-Gd-wOX">
+                        <barButtonItem key="leftBarButtonItem" title="Выйти" id="lBY-EY-98I">
+                            <connections>
+                                <action selector="signOutTapped:" destination="dcg-Ug-Roo" id="gyy-Lk-aoj"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="q5p-Xh-AyY">
                             <connections>
                                 <action selector="addTapped:" destination="dcg-Ug-Roo" id="ajR-Ts-0tA"/>
