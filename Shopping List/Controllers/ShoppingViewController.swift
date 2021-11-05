@@ -21,6 +21,15 @@ class ShoppingViewController: UIViewController {
     }
     
     @IBAction func addTapped(_ sender: UIBarButtonItem) {
+        let alertController = UIAlertController(title: "Новая покупка", message: "Добавить новую покупку", preferredStyle: .alert)
+        alertController.addTextField()
+        alertController.addAction(UIAlertAction(title: "Сохранить", style: .default) { _ in
+            guard let textField = alertController.textFields?.first, textField.text != "" else { return }
+            
+        })
+        alertController.addAction(UIAlertAction(title: "Отмена", style: .cancel, handler: nil))
+        
+        present(alertController, animated: true, completion: nil)
     }
     
     @IBAction func signOutTapped(_ sender: UIBarButtonItem) {

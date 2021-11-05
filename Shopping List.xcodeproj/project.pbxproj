@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8787AA1A2735144900402390 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8787AA192735144900402390 /* GoogleService-Info.plist */; };
+		8787AA1D2735171000402390 /* ShopListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8787AA1C2735171000402390 /* ShopListItem.swift */; };
+		8787AA1F2735171B00402390 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8787AA1E2735171B00402390 /* User.swift */; };
 		87EEB24D2734DE1A00F13BC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EEB24C2734DE1A00F13BC3 /* AppDelegate.swift */; };
 		87EEB24F2734DE1A00F13BC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EEB24E2734DE1A00F13BC3 /* SceneDelegate.swift */; };
 		87EEB2512734DE1A00F13BC3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EEB2502734DE1A00F13BC3 /* LoginViewController.swift */; };
@@ -14,7 +17,6 @@
 		87EEB2562734DE1B00F13BC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87EEB2552734DE1B00F13BC3 /* Assets.xcassets */; };
 		87EEB2592734DE1B00F13BC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87EEB2572734DE1B00F13BC3 /* LaunchScreen.storyboard */; };
 		87EEB2612734E3EA00F13BC3 /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EEB2602734E3EA00F13BC3 /* ShoppingViewController.swift */; };
-		87EEB2662734EABB00F13BC3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87EEB2652734EABB00F13BC3 /* GoogleService-Info.plist */; };
 		D5A76E07C769D82AF93C2C87 /* Pods_Shopping_List.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F0FAFEBBF3D315F587F6FA /* Pods_Shopping_List.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +24,9 @@
 		44F0FAFEBBF3D315F587F6FA /* Pods_Shopping_List.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shopping_List.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A9BFC6C102CC5760672552C /* Pods-Shopping List.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shopping List.release.xcconfig"; path = "Target Support Files/Pods-Shopping List/Pods-Shopping List.release.xcconfig"; sourceTree = "<group>"; };
 		7CB9C275943C40C47FFD9F6C /* Pods-Shopping List.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shopping List.debug.xcconfig"; path = "Target Support Files/Pods-Shopping List/Pods-Shopping List.debug.xcconfig"; sourceTree = "<group>"; };
+		8787AA192735144900402390 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8787AA1C2735171000402390 /* ShopListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListItem.swift; sourceTree = "<group>"; };
+		8787AA1E2735171B00402390 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		87EEB2492734DE1A00F13BC3 /* Shopping List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shopping List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87EEB24C2734DE1A00F13BC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87EEB24E2734DE1A00F13BC3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,7 +36,6 @@
 		87EEB2582734DE1B00F13BC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87EEB25A2734DE1B00F13BC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87EEB2602734E3EA00F13BC3 /* ShoppingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
-		87EEB2652734EABB00F13BC3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		8787AA1B273516F000402390 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8787AA1C2735171000402390 /* ShopListItem.swift */,
+				8787AA1E2735171B00402390 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		87EEB2402734DE1A00F13BC3 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +89,7 @@
 		87EEB24B2734DE1A00F13BC3 /* Shopping List */ = {
 			isa = PBXGroup;
 			children = (
+				8787AA1B273516F000402390 /* Models */,
 				87EEB2642734E47300F13BC3 /* Controllers */,
 				87EEB2632734E43500F13BC3 /* Supporting files */,
 			);
@@ -90,7 +104,7 @@
 				87EEB2522734DE1A00F13BC3 /* Main.storyboard */,
 				87EEB2552734DE1B00F13BC3 /* Assets.xcassets */,
 				87EEB2572734DE1B00F13BC3 /* LaunchScreen.storyboard */,
-				87EEB2652734EABB00F13BC3 /* GoogleService-Info.plist */,
+				8787AA192735144900402390 /* GoogleService-Info.plist */,
 				87EEB25A2734DE1B00F13BC3 /* Info.plist */,
 			);
 			path = "Supporting files";
@@ -174,7 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87EEB2592734DE1B00F13BC3 /* LaunchScreen.storyboard in Resources */,
-				87EEB2662734EABB00F13BC3 /* GoogleService-Info.plist in Resources */,
+				8787AA1A2735144900402390 /* GoogleService-Info.plist in Resources */,
 				87EEB2562734DE1B00F13BC3 /* Assets.xcassets in Resources */,
 				87EEB2542734DE1A00F13BC3 /* Main.storyboard in Resources */,
 			);
@@ -231,6 +245,8 @@
 			files = (
 				87EEB2512734DE1A00F13BC3 /* LoginViewController.swift in Sources */,
 				87EEB24D2734DE1A00F13BC3 /* AppDelegate.swift in Sources */,
+				8787AA1F2735171B00402390 /* User.swift in Sources */,
+				8787AA1D2735171000402390 /* ShopListItem.swift in Sources */,
 				87EEB2612734E3EA00F13BC3 /* ShoppingViewController.swift in Sources */,
 				87EEB24F2734DE1A00F13BC3 /* SceneDelegate.swift in Sources */,
 			);
