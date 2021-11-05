@@ -12,6 +12,7 @@ import FirebaseAuth
 class LoginViewController: UIViewController {
     
     private let segueIdentifier = "shopListSegue"
+    private var ref: DatabaseReference!
     
     @IBOutlet weak var warningLabel: UILabel!
     @IBOutlet weak var emailTextField: UITextField!
@@ -20,6 +21,8 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        ref = Database.database().reference(withPath: "users")
         
         warningLabel.alpha = 0
         
@@ -85,7 +88,12 @@ class LoginViewController: UIViewController {
             return
         }
 
-        Auth.auth().createUser(withEmail: email, password: password, completion: nil)
+        Auth.auth().createUser(withEmail: email, password: password, completion: { [weak self] (user, error) in
+            guard error == nil, user != nil else { return }
+            
+            let userRef = self?.ref.child((user?.user.uid)!)
+            userRef?.setValue(["email" : user?.user.email])
+        })
     }
     
     
